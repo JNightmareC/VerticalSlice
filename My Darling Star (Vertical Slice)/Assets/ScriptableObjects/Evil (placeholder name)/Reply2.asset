@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: StartConvo
+  m_Name: Reply2
   m_EditorClassIdentifier: 
-  _NPCName: 
+  _NPCName: Evil
   _lines:
-  - 
-  - 
-  - 
-  characterPortrate: {fileID: 0}
+  - Six PM!!
+  - The stardust is about to apear soon
+  - The gates are about to open
+  - 'But how are you suposed to go... '
+  - ...on without a gift!!??
   _playerReplyOptions: []
-  _npcReplies:
-  - {fileID: 0}
-  _differentObjectHeldNodes: []
+  _npcReplies: []

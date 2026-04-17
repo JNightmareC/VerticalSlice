@@ -7,8 +7,8 @@ public class DialogueNode : ScriptableObject
 {
     public string _NPCName;
     public string[] _lines;
-    public Sprite characterPortrate;
+    //public Sprite characterPortrate;
     public string[] _playerReplyOptions;
     public DialogueNode[] _npcReplies;
-    public DialogueNode[] _differentObjectHeldNodes;
+    //public DialogueNode[] _differentObjectHeldNodes;
 }

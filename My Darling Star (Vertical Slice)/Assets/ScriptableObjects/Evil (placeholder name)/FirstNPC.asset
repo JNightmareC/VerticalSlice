@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: FirstNPC
   m_EditorClassIdentifier: 
   _NPCName: Evil
-  _lines: []
-  characterPortrate: {fileID: 0}
+  _lines:
+  - hello glinkly glongly Moon!
+  - gee, you slept for a LONG time!
+  - It's so late!
+  - Sunny's been waiting for you!
   _playerReplyOptions:
-  - 
+  - She has?
+  - What time is it?
+  - Where's the gift?
   _npcReplies:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8a635b48fac6d406e90ede7f0bf23041, type: 2}
+  - {fileID: 11400000, guid: 5d793ba671fa747d89cc763e14b57d0b, type: 2}
+  - {fileID: 11400000, guid: ea631472bb5554ec89049d8e4b9b6269, type: 2}
