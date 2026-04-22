@@ -1184,6 +1184,7 @@ MonoBehaviour:
   _dialougeDifferntNodeStates:
   - {fileID: 11400000, guid: 82111c5009f28415daa1397e833d4c21, type: 2}
   - {fileID: 11400000, guid: a33e6fba0631742249d7cfbd8e183845, type: 2}
+  - {fileID: 11400000, guid: 86942548370f34b428b417ea2ccdd8ca, type: 2}
   _playerMovement: {fileID: 343729982}
 --- !u!65 &497714294
 BoxCollider:
@@ -1294,11 +1295,13 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Camera","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Camera,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"PlayerMovement","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"Unity.VisualScripting.ScriptMachine,
-      Unity.VisualScripting.Flow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      Unity.VisualScripting.Flow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"FullDialouge","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"FullDialouge,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 330585545}
     - {fileID: 343729978}
     - {fileID: 343729982}
+    - {fileID: 497714293}
 --- !u!4 &531852584
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
   m_Name: Got cube
   m_EditorClassIdentifier: 
-  _NPCName: 
-  _lines: []
+  _NPCName: Evil
+  _lines:
+  - OMG yippie you got the cube!
   _playerReplyOptions: []
   _npcReplies: []
