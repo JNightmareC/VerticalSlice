@@ -15,10 +15,9 @@ MonoBehaviour:
   _NPCName: Evil
   _lines:
   - Some goober threw it somewhere while you..
-  - y'know...
+  - Y'know...
   - '*HONK MI MI SHOO*'
-  - I tried to stop them but...
-  - Y'know
-  - stumpy paws-
+  - I tried to stop them but uh...
+  - Stumpy paws-
   _playerReplyOptions: []
   _npcReplies: []

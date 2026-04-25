@@ -15,6 +15,6 @@ MonoBehaviour:
   _NPCName: Evil
   _lines:
   - Well then, don't talk to me
-  - go get it!
+  - Go get it!
   _playerReplyOptions: []
   _npcReplies: []

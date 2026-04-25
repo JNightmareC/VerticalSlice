@@ -15,9 +15,8 @@ MonoBehaviour:
   _NPCName: Evil
   _lines:
   - Six PM!!
-  - The stardust is about to apear soon
-  - The gates are about to open
-  - 'But how are you suposed to go... '
-  - ...on without a gift!!??
+  - The stardust is about to apear soon (yummers)
+  - Not to mention that her gate's are about to open!
+  - But how are you suposed to go on without a gift!!??
   _playerReplyOptions: []
   _npcReplies: []

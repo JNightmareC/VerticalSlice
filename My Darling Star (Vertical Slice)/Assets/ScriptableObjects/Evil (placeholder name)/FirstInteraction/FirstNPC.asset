@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NPCName: Evil
   _lines:
-  - hello glinkly glongly Moon!
-  - gee, you slept for a LONG time!
+  - Hello glinkly glongly Moon!
+  - Gee, you slept for a LONG time!
   - It's so late!
   - Sunny's been waiting for you!
   _playerReplyOptions:

@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: ReplyOne
+  m_Name: Reply1
   m_EditorClassIdentifier: 
   _NPCName: Evil
   _lines:
   - 'Yeah! '
   - It's nearly been a FULL moon cycle!
+  - And your gift for her's missing!
+  - Hurry up and go find it >:[
   _playerReplyOptions: []
   _npcReplies: []
