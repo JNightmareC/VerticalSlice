@@ -16,15 +16,17 @@ MonoBehaviour:
   _lines:
   - OMG yippie you got the cube!
   - It's so perfect and she toatally wont be absolutely
-  - '- and TOTALLY'
+  - -and TOTALLY
   - Confuddled about what you just gave her :3
   - I'm being sarcastic if you couldnt tell
   - This is stupid
   - You're stupid
-  - 'go find something better '
-  - I'd roll my eye at you for more emphasis, but as you can probably tell
-  - they are much to big to move in my giant sockets
-  - That means I'm ten times better at seeing your mistakes than you can :)
+  - 'Go find something better '
+  - I'd roll my eye at you for more emphasis-
+  - but as you can PROBABLY tell,
+  - they are much to big to move around in my skull.
+  - My big eyes mean that I'm ten times better at seeing your mistakes-
+  - than you can :)
   - (That was a passive agressive smile by the way)
   _playerReplyOptions: []
   _npcReplies: []
