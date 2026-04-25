@@ -21,7 +21,11 @@ public class FullDialouge : MonoBehaviour
     private int _currentLine = 0;
     private bool _runningDialogue;
     private bool _waitingForPlayerResponse;
-    private bool _spokeToAlready = false;
+    private bool _gotCube = false;
+    private bool _gotTriangle = false;
+    private bool _gotRight = false;
+     
+
 
 
     private void Start ()
@@ -68,10 +72,35 @@ public class FullDialouge : MonoBehaviour
             _waitingForPlayerResponse = true;
             _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
         }
+
         else 
         {
             EndDialogue();
-            _currentNode = _dialougeDifferntNodeStates[1];
+
+            if(_gotCube == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[2];
+            }
+            else if(_gotTriangle == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[3];
+
+            }
+            /*else if(_gotTriangle && _gotCube)
+            {
+                
+            }
+            
+            else if (_gotRight)
+            {
+                
+            }
+            */
+            else
+            {
+                _currentNode = _dialougeDifferntNodeStates[1];
+
+            }
 
         }
     }
@@ -98,17 +127,31 @@ public class FullDialouge : MonoBehaviour
         _currentNode = _currentNode._npcReplies[option];
         AdvanceDialogue();
     }
-    public void AniGift()
+    public void GotCube()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[2];
+        _gotCube = true;
         
         
+    }
+    public void GotTriangle()
+    {
+       _waitingForPlayerResponse = false;
+        _currentNode = _dialougeDifferntNodeStates[3];
+        _gotTriangle = true; 
+    }
+    public void GotCorrect()
+    {
+        _waitingForPlayerResponse = false;
+        _currentNode = _dialougeDifferntNodeStates[2];
+        _gotRight = true;
     }
     public void GogetIt()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[1];
     }
+
     
 }
