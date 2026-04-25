@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Got cube
+  m_Name: CorrectItem
   m_EditorClassIdentifier: 
   _NPCName: Evil
   _lines:
-  - OMG yippie you got the cube!
-  - It's so perfect and she toatally wont be absolutely-
-  - -confuddled about what you just gave her :3
-  - I'm being sarcastic... if you couldnt tell, this is stupid
+  - 'Oh hell yeah you got it! '
+  - I think she's really gonna like it!
   _playerReplyOptions: []
   _npcReplies: []

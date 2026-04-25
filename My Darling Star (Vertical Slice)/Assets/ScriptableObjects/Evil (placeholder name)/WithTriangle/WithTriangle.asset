@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Got cube
+  m_Name: WithTriangle
   m_EditorClassIdentifier: 
   _NPCName: Evil
   _lines:
-  - OMG yippie you got the cube!
-  - It's so perfect and she toatally wont be absolutely-
-  - -confuddled about what you just gave her :3
-  - I'm being sarcastic... if you couldnt tell, this is stupid
+  - Oh this, this isn't...
+  - twin this is NOT what she wants
+  - Did you like, forget what you got her?
+  - that's kinda sad bro
+  - I'll give you a clue I guess?
+  - Look for the only yellow thing here
   _playerReplyOptions: []
   _npcReplies: []
