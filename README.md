@@ -16,4 +16,7 @@ Milestone 4 Devlog goes here.
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets
-- Cite any external assets used here!
+[Handpainted grass and ground textures by Chromisu](https://assetstore.unity.com/publishers/35697) - Floor textures
+[Character Template Asset Pack by ErisEsra](https://erisesra.itch.io/character-templates-pack) - PLayer stand in animations and sprite 
+[Friendlyscribbles by kmlgames](https://kmlgames.itch.io/friendly-scribbles) - font
+[Sprout Lands Asset pack by Cup Nooble](https://cupnooble.itch.io/sprout-lands-ui-pack) - UI for speech
