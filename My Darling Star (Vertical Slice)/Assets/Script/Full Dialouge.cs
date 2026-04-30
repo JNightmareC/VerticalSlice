@@ -24,6 +24,7 @@ public class FullDialouge : MonoBehaviour
     private bool _gotCube = false;
     private bool _gotTriangle = false;
     private bool _gotRight = false;
+    public bool _talking = false;
      
 
 
@@ -59,6 +60,7 @@ public class FullDialouge : MonoBehaviour
     {
         _runningDialogue = true;
         _playerMovement.enabled = false;
+        _talking = true;
 
         if(_currentLine < _currentNode._lines.Length)
         {
@@ -75,6 +77,7 @@ public class FullDialouge : MonoBehaviour
 
         else 
         {
+            _talking = false;
             EndDialogue();
 
             if(_gotCube == true)
