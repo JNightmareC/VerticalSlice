@@ -16,5 +16,7 @@ MonoBehaviour:
   _lines:
   - Well then, don't talk to me
   - Go get it!
+  - And don't forget, make sure to really FOCUS on what the object is
+  - It's out there, and a pretty small thing too
   _playerReplyOptions: []
   _npcReplies: []

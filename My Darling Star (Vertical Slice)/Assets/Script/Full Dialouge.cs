@@ -23,7 +23,11 @@ public class FullDialouge : MonoBehaviour
     private bool _waitingForPlayerResponse;
     private bool _gotCube = false;
     private bool _gotTriangle = false;
-    private bool _gotRight = false;
+    public bool _gotSecret = false;
+    public bool _gotCorrect = false;
+    private bool _gotMultiple = false;
+    
+    private bool _gotCorrectAndMultiple = false;
     public bool _talking = false;
      
 
@@ -89,16 +93,26 @@ public class FullDialouge : MonoBehaviour
                 _currentNode = _dialougeDifferntNodeStates[3];
 
             }
-            /*else if(_gotTriangle && _gotCube)
+            else if (_gotCorrect == true)
             {
-                
+                _currentNode = _dialougeDifferntNodeStates[4];
+            }
+            else if (_gotCorrectAndMultiple == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[5];
+            }
+            else if (_gotSecret == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[6];
+
+            }  
+            else if(_gotMultiple)
+            {
+                _currentNode = _dialougeDifferntNodeStates[7];
             }
             
-            else if (_gotRight)
-            {
-                
-            }
-            */
+            
+            
             else
             {
                 _currentNode = _dialougeDifferntNodeStates[1];
@@ -144,12 +158,33 @@ public class FullDialouge : MonoBehaviour
         _currentNode = _dialougeDifferntNodeStates[3];
         _gotTriangle = true; 
     }
+    
+    public void GotSecret()
+    {
+        _waitingForPlayerResponse = false;
+        _currentNode = _dialougeDifferntNodeStates[6];
+        _gotSecret = true;
+    }
     public void GotCorrect()
     {
         _waitingForPlayerResponse = false;
-        _currentNode = _dialougeDifferntNodeStates[2];
-        _gotRight = true;
+        _currentNode = _dialougeDifferntNodeStates[4];
+        _gotCorrect = true;
     }
+    public void GotMultiple()
+    {
+        _waitingForPlayerResponse = false;
+        _currentNode = _dialougeDifferntNodeStates[7];
+        _gotMultiple = true;
+    }
+    public void GotMultipleAndCorrect()
+    {
+        _waitingForPlayerResponse = false;
+        _currentNode = _dialougeDifferntNodeStates[5];
+        _gotCorrectAndMultiple = true;
+    }
+    
+
     public void GogetIt()
     {
         _waitingForPlayerResponse = false;
