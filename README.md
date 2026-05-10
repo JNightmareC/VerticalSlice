@@ -9,7 +9,36 @@ This state machine mainly works to change the player character's animation to fi
 
 
 ## Milestone 2 Devlog
-Milestone 2 Devlog goes here.
+### Question 1
+Basic breakdown:
+
+1.  make a state machine on the Item game object that controls/ calls the special nodes of the dialogue controller
+2.  Code in the dialogue controller methods that depending on what item is being added to inventory, trigger an set a new node state to set to the NPC’s default conversation to
+3.  Add transition gates to transfer into 3 different types of nodes, each item will have their own respective node attached to them, if multiple are grabbed they have a shared generic, and if the correct item is grabbed then it triggers a new area to be opened 
+
+Detailed breakdown:
+
+1. Make a state machine on the Items that will have the advanced branches 
+2. Have there be 1 “regular” node that contains a regular dialogue set that repeats and tells the player to “go get” the item asked for
+3. Have there be 4 item branches, that connect to regular. Each of those have a transition entering them that checks to see if the specific item is being held, and is ONLY being held
+4. Have one “multiple” state that is funneled into when multiple items are in the inventory except the correct one, the conditions is a large or statement 
+5. And one final state that checks if an item with the name “correct item” is in the list of game objects to run a congratulatory node and to open the gate to let you through and reach the “end” of the game (the star dust also does this)
+6. Go into the full dialogue c# code you do have and add 6 different methods, each should check off these things, 
+    1. Waiting for player response is false 
+    2. Current node has to be triggered to the node associated with what you want the NPC response to be
+    3. And the bool associated with the condition is set to true 
+7. Then go into the advance dialogue and in the else condition when player isn’t talking to the NPC, add all the bools as if and else if statements, reinforcing and locking in the node 
+8. In the main unity scene, create all new nodes for dialogue, and add them to the “dialogue different node states” variable so their numbers can be called to 
+9. In the Items state machine, fill in the nodes to trigger when entered and call the method corresponding to it in script
+10. In the transitions, fill them in with an on update check of the list containing all the items to see if the required item is in there to move onto the next state
+### Question 2
+My breakdown was actually really helpful with what I was doing, as it gave me a really good baseline blueprint of what I was going to make. It was helpful because it let me get my htoughts out and really concept how I would structure and build  everything. I had to consider my scale, if I had to research anyting, and if I had all the peices nessissariy to actualy start or continue. I think to improve my breakddown in the future by maybe elaborating on the exact object the component/ script would be on, along with going into a bit more detail exactly what I would need on each other script the object would interact with. 
+
+### Question 3
+I was able to bridge both of those by being able to call meathods in a dialouge script, from a state graph to control conversations gates based in what the player is holding in their inventory. The purpose this serves is to take strain off of me having to hard code everything in a certain way, and it was much easier to control. I was able to trigger and make gates for certain conversation states, and in terms of my architecture, I want to make sure to keep options open to trigger new animations states with the NPC through them, or to trigger a sound effect. 
+
+### Question 4
+Th unity system I used was the scriptabe objects. They can be found attached to the only NPC present so far, in a dedicated folder, and referenced in 3 Dialouge referenced scripts (and graphs). 
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
