@@ -56,3 +56,5 @@ Final Devlog goes here.
 [Friendlyscribbles by kmlgames](https://kmlgames.itch.io/friendly-scribbles) - font
 
 [Sprout Lands Asset pack by Cup Nooble](https://cupnooble.itch.io/sprout-lands-ui-pack) - UI for speech
+
+[Low Poly Environment - Nature Free - LOWPOLY MEDIEVAL FANTASY SERIES by Polytope Studio](https://assetstore.unity.com/packages/3d/environments/low-poly-environment-nature-free-lowpoly-medieval-fantasy-series-187052) - nature enviroment assets
