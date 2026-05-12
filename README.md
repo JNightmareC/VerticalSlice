@@ -35,10 +35,13 @@ Detailed breakdown:
 My breakdown was actually really helpful with what I was doing, as it gave me a really good baseline blueprint of what I was going to make. It was helpful because it let me get my htoughts out and really concept how I would structure and build  everything. I had to consider my scale, if I had to research anyting, and if I had all the peices nessissariy to actualy start or continue. I think to improve my breakddown in the future by maybe elaborating on the exact object the component/ script would be on, along with going into a bit more detail exactly what I would need on each other script the object would interact with. 
 
 ### Question 3
-I was able to bridge both of those by being able to call meathods in a dialouge script, from a state graph to control conversations gates based in what the player is holding in their inventory. The purpose this serves is to take strain off of me having to hard code everything in a certain way, and it was much easier to control. I was able to trigger and make gates for certain conversation states, and in terms of my architecture, I want to make sure to keep options open to trigger new animations states with the NPC through them, or to trigger a sound effect. 
+I was able to bridge both of those by being able to call meathods in a dialouge script, from a state graph to control conversations gates based in what the player is holding in their inventory. The purpose this serves is to take strain off of me having to hard code everything in a certain way, and it was much easier to control with very specifc conditions I knew players would put themselves into. I was able to trigger and make gates for certain conversation states, and in terms of my architecture, I want to make sure to keep options open to trigger new animations states with the NPC through them, or to trigger a sound effect, just making things more versatile in terms of interactivity. 
+<img width="1504" height="783" alt="Screenshot 2026-05-11 at 7 33 27 PM" src="https://github.com/user-attachments/assets/67cd9db6-6daa-4d52-b0a6-807c1f833e1d" />
+<img width="585" height="330" alt="Screenshot 2026-05-11 at 7 34 02 PM" src="https://github.com/user-attachments/assets/4823f8e3-99c0-4219-81a7-77c08a0c0b52" />
+
 
 ### Question 4
-Th unity system I used was the scriptabe objects. They can be found attached to the only NPC present so far, in a dedicated folder, and referenced in 3 Dialouge referenced scripts (and graphs). 
+The unity system I used was the scriptabe objects. They can be found attached to the only NPC present so far, in a dedicated folder, and referenced in 3 Dialouge realted scripts (and graphs). 
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
