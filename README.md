@@ -32,7 +32,7 @@ Detailed breakdown:
 9. In the Items state machine, fill in the nodes to trigger when entered and call the method corresponding to it in script
 10. In the transitions, fill them in with an on update check of the list containing all the items to see if the required item is in there to move onto the next state
 ### Question 2
-My breakdown was actually really helpful with what I was doing, as it gave me a really good baseline blueprint of what I was going to make. It was helpful because it let me get my htoughts out and really concept how I would structure and build  everything. I had to consider my scale, if I had to research anyting, and if I had all the peices nessissariy to actualy start or continue. I think to improve my breakddown in the future by maybe elaborating on the exact object the component/ script would be on, along with going into a bit more detail exactly what I would need on each other script the object would interact with. 
+My breakdown was actually really helpful with what I was doing, as it gave me a really good baseline blueprint of what I was going to make. It was helpful because it let me get my thoughts out and really concept how I would structure and build everything. I had to consider my scale, if I had to research anyting, and if I had all the peices nessissariy to actualy start or continue. I think to improve my breakddown in the future by maybe elaborating on the exact object the component/ script would be on, along with going into a bit more detail with exactly what I would need on other scripts what any specific object object would need in order to get data, or interact with the item the specific script is attached to. I left that vauge and I got quite confused trying to figure that out as I was actually building the concepted peice.  
 
 ### Question 3
 I was able to bridge both of those by being able to call meathods in a dialouge script, from a state graph to control conversations gates based in what the player is holding in their inventory. The purpose this serves is to take strain off of me having to hard code everything in a certain way, and it was much easier to control with very specifc conditions I knew players would put themselves into. I was able to trigger and make gates for certain conversation states, and in terms of my architecture, I want to make sure to keep options open to trigger new animations states with the NPC through them, or to trigger a sound effect, just making things more versatile in terms of interactivity. 
@@ -41,7 +41,8 @@ I was able to bridge both of those by being able to call meathods in a dialouge 
 
 
 ### Question 4
-The unity system I used was the scriptabe objects. They can be found attached to the only NPC present so far, in a dedicated folder, and referenced in 3 Dialouge realted scripts (and graphs). 
+The unity system I used was the scriptabe objects. They can be found attached to the only NPC present so far, in a dedicated folder, and referenced in 3 Dialouge realted scripts (and graphs, these being Dialoge Node, DialougeUI, Full Dialouge, Yippie Creature state graph, and Items state graoh).
+
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
