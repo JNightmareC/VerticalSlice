@@ -19,7 +19,7 @@ public class FullDialouge : MonoBehaviour
     [SerializeField] private ScriptMachine _playerMovement;
     private DialogueNode _currentNode;
     private int _currentLine = 0;
-    private bool _runningDialogue;
+    public bool _runningDialogue;
     private bool _waitingForPlayerResponse;
     private bool _gotCube = false;
     private bool _gotTriangle = false;
@@ -29,6 +29,9 @@ public class FullDialouge : MonoBehaviour
     
     private bool _gotCorrectAndMultiple = false;
     public bool _talking = false;
+
+    public string _NPCName; 
+    public bool _talkingOver = false;
      
 
 
@@ -36,6 +39,7 @@ public class FullDialouge : MonoBehaviour
     private void Start ()
     {
         _currentNode = _dialougeDifferntNodeStates[0];
+        _talkingOver = false;
         
     }
 
@@ -65,6 +69,7 @@ public class FullDialouge : MonoBehaviour
         _runningDialogue = true;
         _playerMovement.enabled = false;
         _talking = true;
+        _talkingOver = false;
 
         if(_currentLine < _currentNode._lines.Length)
         {
@@ -82,44 +87,73 @@ public class FullDialouge : MonoBehaviour
         else 
         {
             _talking = false;
+            _talkingOver = true;
             EndDialogue();
 
-            if(_gotCube == true)
+            if(_gotCube == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[2];
             }
-            else if(_gotTriangle == true)
+            else if(_gotTriangle == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[3];
 
             }
-            else if (_gotCorrect == true)
+            else if (_gotCorrect == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[4];
             }
-            else if (_gotCorrectAndMultiple == true)
+            else if (_gotCorrectAndMultiple == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[5];
             }
-            else if (_gotSecret == true)
+            else if (_gotSecret == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[6];
 
             }  
-            else if(_gotMultiple)
+            else if(_gotMultiple && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[7];
             }
             
-            
+            else if(gameObject.name == "Howie")
+            {
+                _talkingOver = true;
+                _currentNode = _dialougeDifferntNodeStates[1];
+
+            }
             
             else
             {
-                _currentNode = _dialougeDifferntNodeStates[1];
+                _talkingOver = true;
 
             }
 
         }
+    }
+
+    private void AdvanceSunnyDialouge()
+    {
+        _runningDialogue = true;
+        _playerMovement.enabled = false;
+        _talking = true;
+        _talkingOver = false;
+
+        if(_currentLine < _currentNode._lines.Length)
+        {
+            // if we still have NPC lines left, keep playing NPC lines 
+            _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
+            _currentLine++;
+        }
+        else if(_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
+        {
+            // show player dialogue options, if there are any
+            _waitingForPlayerResponse = true;
+            _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
+        }
+
+        
     }
 
     public void EndDialogue ()
@@ -131,10 +165,12 @@ public class FullDialouge : MonoBehaviour
         _dialogue.HideDialogue();
 
        _playerMovement.enabled = true;
+       _talkingOver = true;
 
        
 
     }
+    
 
     public void SelectedOption(int option)
     {

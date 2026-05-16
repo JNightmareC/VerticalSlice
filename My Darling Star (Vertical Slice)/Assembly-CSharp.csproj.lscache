@@ -51,16 +51,23 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.1
 /warnaserror+:NU1605
 
 [sourceFiles]
-Assets/Script/
- Dialoge Node.cs
- DialougeUI.cs
- Full Dialouge.cs
- PlayerSingleton.cs
 Assets/
+ Howie.cs
+ Script/
+  Dialoge Node.cs
+  DialougeUI.cs
+  Full Dialouge.cs
+  PlayerSingleton.cs
+ SecretCreature.cs
  TutorialInfo/Scripts/Readme.cs
  Unity.VisualScripting.Generated/VisualScripting.Core/
   AotStubs.cs
   Property Providers/
+   PropertyProvider_Cinemachine_CinemachineBrain_BrainEvent.cs
+   PropertyProvider_Cinemachine_CinemachineBrain_VcamActivatedEvent.cs
+   PropertyProvider_Cinemachine_CinemachineImpulseDefinition.cs
+   PropertyProvider_Cinemachine_CinemachineImpulseManager_EnvelopeDefinition.cs
+   PropertyProvider_Cinemachine_CinemachineTriggerAction_ActionSettings_TriggerEvent.cs
    PropertyProvider_TMPro_HorizontalAlignmentOptions.cs
    PropertyProvider_TMPro_TextAlignmentOptions.cs
    PropertyProvider_TMPro_TMP_Character.cs
