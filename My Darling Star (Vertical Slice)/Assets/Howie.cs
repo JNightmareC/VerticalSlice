@@ -1,31 +1,84 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
+using TMPro;
+
+using UnityEngine.UI;
+using UnityEngine.UIElements;
+using UnityEngine.Assertions;
 using Unity.VisualScripting;
 
-/*
-public class Howie : FullDialouge
-{    
-    
+public class Howie : MonoBehaviour
+{
 
-    void Start()
+    [SerializeField] private float _interactionDistance = 2.0f;
+    [SerializeField] private DialougeUI _dialogue;
+    //[SerializeField] private DialogueNode _dialogueStartNode;
+    [SerializeField] private List<DialogueNode> _dialougeDifferntNodeStates;
+    [SerializeField] private ScriptMachine _playerMovement;
+    private DialogueNode _currentNode;
+    private int _currentLine = 0;
+    public bool _runningDialogue;
+    private bool _waitingForPlayerResponse;
+    private bool _gotCube = false;
+    private bool _gotTriangle = false;
+    public bool _gotSecret = false;
+    public bool _gotCorrect = false;
+    private bool _gotMultiple = false;
+    
+    private bool _gotCorrectAndMultiple = false;
+    public bool _talking = false;
+
+    public bool _talkingOver = false;
+     
+
+
+
+    private void Start ()
     {
-        Debug.Log("hi");
+        _currentNode = _dialougeDifferntNodeStates[0];
+        _talkingOver = false;
+        
     }
 
-    public override void AdvanceDialogue ()
+    private void Update ()
+    {
+        if(PlayerSingleton.Instance == null) return;
+
+        if(Vector3.Distance(transform.position, PlayerSingleton.Instance.transform.position) < _interactionDistance)
+        {
+            if(!_waitingForPlayerResponse && Input.GetMouseButtonDown(0))
+            {
+                AdvanceDialogue();
+                
+            }
+        
+        }
+        else
+        {
+            EndDialogue();
+
+        }
+        
+    }
+
+    private void AdvanceDialogue ()
     {
         _runningDialogue = true;
         _playerMovement.enabled = false;
         _talking = true;
+        _talkingOver = false;
 
         if(_currentLine < _currentNode._lines.Length)
         {
+            // if we still have NPC lines left, keep playing NPC lines 
             _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
             _currentLine++;
         }
         else if(_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
         {
+            // show player dialogue options, if there are any
             _waitingForPlayerResponse = true;
             _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
         }
@@ -33,47 +86,102 @@ public class Howie : FullDialouge
         else 
         {
             _talking = false;
+            _talkingOver = true;
             EndDialogue();
 
-            if(_gotCube == true)
+            if(_gotCube == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[2];
             }
-            else if(_gotTriangle == true)
+            else if(_gotTriangle == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[3];
 
             }
-            else if (_gotCorrect == true)
+            else if (_gotCorrect == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[4];
             }
-            else if (_gotCorrectAndMultiple == true)
+            else if (_gotCorrectAndMultiple == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[5];
             }
-            else if (_gotSecret == true)
+            else if (_gotSecret == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[6];
 
             }  
-            else if(_gotMultiple)
+            else if(_gotMultiple && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[7];
             }
             
-            
+            else if(gameObject.name == "Howie")
+            {
+                _talkingOver = true;
+                _currentNode = _dialougeDifferntNodeStates[1];
+
+            }
             
             else
             {
-                _currentNode = _dialougeDifferntNodeStates[1];
+                _talking = false;
+
+                _talkingOver = true;
 
             }
 
         }
     }
 
-    public override void GotCube()
+    private void AdvanceSunnyDialouge()
+    {
+        _runningDialogue = true;
+        _playerMovement.enabled = false;
+        _talking = true;
+        _talkingOver = false;
+
+        if(_currentLine < _currentNode._lines.Length)
+        {
+            // if we still have NPC lines left, keep playing NPC lines 
+            _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
+            _currentLine++;
+        }
+        else if(_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
+        {
+            // show player dialogue options, if there are any
+            _waitingForPlayerResponse = true;
+            _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
+        }
+
+        
+    }
+
+    public void EndDialogue ()
+    {
+        _runningDialogue = false;
+        _waitingForPlayerResponse = false;
+        //_currentNode = _dialougeDifferntNodeStates[0];
+        _currentLine = 0;
+        _dialogue.HideDialogue();
+
+       _playerMovement.enabled = true;
+       _talkingOver = true;
+
+       
+
+    }
+    
+
+    public void SelectedOption(int option)
+    {
+        _currentLine = 0;
+        _waitingForPlayerResponse = false;
+
+        _currentNode = _currentNode._npcReplies[option];
+        AdvanceDialogue();
+    }
+    public void GotCube()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[2];
@@ -81,32 +189,32 @@ public class Howie : FullDialouge
         
         
     }
-    public override void GotTriangle()
+    public void GotTriangle()
     {
        _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[3];
         _gotTriangle = true; 
     }
     
-    public override void GotSecret()
+    public void GotSecret()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[6];
         _gotSecret = true;
     }
-    public override void GotCorrect()
+    public void GotCorrect()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[4];
         _gotCorrect = true;
     }
-    public override void GotMultiple()
+    public void GotMultiple()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[7];
         _gotMultiple = true;
     }
-    public override void GotMultipleAndCorrect()
+    public void GotMultipleAndCorrect()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[5];
@@ -114,10 +222,11 @@ public class Howie : FullDialouge
     }
     
 
-    public override void GogetIt()
+    public void GogetIt()
     {
         _waitingForPlayerResponse = false;
         _currentNode = _dialougeDifferntNodeStates[1];
     }
+
+    
 }
-*/

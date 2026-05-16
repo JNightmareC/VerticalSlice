@@ -8,9 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LiberationSans SDF Material
-  m_Shader: {fileID: 4800000, guid: c8d12adcee749c344b8117cf7c7eb912, type: 3}
-  m_Parent: {fileID: 8701399063188500805, guid: 56bb406bb48774ec59eb3f0f21961356,
-    type: 2}
+  m_Shader: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+  m_Parent: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
   - UNDERLAY_ON
@@ -39,6 +38,7 @@ Material:
     - _TextureWidth: 1024
     - _UnderlayOffsetX: 0.88
     m_Colors:
+    - _FaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _UnderlayColor: {r: 0.02981977, g: 0.23529412, b: 0, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!114 &11400000

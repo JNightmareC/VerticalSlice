@@ -6,10 +6,7 @@ public class DialougeUI : MonoBehaviour
 {
    [SerializeField] private TMP_Text _npcText;
     [SerializeField] private GameObject _npcDialogue;
-    [SerializeField] private GameObject _playerDialougeChoicesHowie;
-    [SerializeField] private GameObject _playerDialougeChoicesCreature;
-    [SerializeField] private GameObject _playerDialougeChoicesSunny;
-
+    [SerializeField] private GameObject _playerDialougeChoices;
     [SerializeField] private TMP_Text _option1;
     [SerializeField] private TMP_Text _option2;
     [SerializeField] private TMP_Text _option3;
@@ -20,9 +17,8 @@ public class DialougeUI : MonoBehaviour
 
         _npcDialogue.SetActive(true);
         
-        _playerDialougeChoicesHowie.SetActive(false);
-        _playerDialougeChoicesCreature.SetActive(false);
-        _playerDialougeChoicesSunny.SetActive(false);
+        _playerDialougeChoices.SetActive(false);
+        
 
         _npcText.text = NPCTalk;
     }
@@ -32,9 +28,8 @@ public class DialougeUI : MonoBehaviour
         gameObject.SetActive(true);
         _npcDialogue.SetActive(false);
 
-        _playerDialougeChoicesHowie.SetActive(false);
-        _playerDialougeChoicesCreature.SetActive(false);
-        _playerDialougeChoicesSunny.SetActive(false);
+        _playerDialougeChoices.SetActive(false);
+
     }
 
     public void ShowPlayerOptions(string[] options)
@@ -42,18 +37,9 @@ public class DialougeUI : MonoBehaviour
         gameObject.SetActive(true);
         _npcDialogue.SetActive(false);
         
-        if (gameObject.name == "Howie")
-        {
-            _playerDialougeChoicesHowie.SetActive(true);
-        }
-        else if (gameObject.name == "Creature")
-        {
-            _playerDialougeChoicesCreature.SetActive(true);
-        }
-        else if (gameObject.name == "Sunny")
-        {
-            _playerDialougeChoicesSunny.SetActive(true);
-        }
+        _playerDialougeChoices.SetActive(true);
+        
+       
 
         _option1.text = options[0];
 
@@ -82,5 +68,6 @@ public class DialougeUI : MonoBehaviour
     {
         _npcDialogue.SetActive(false);
         gameObject.SetActive(false);
+        _playerDialougeChoices.SetActive(false);
     }
 }
