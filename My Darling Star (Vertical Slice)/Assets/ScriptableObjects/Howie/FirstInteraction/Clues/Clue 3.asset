@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: Clue 3
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - Something sharp did hit my hand, it pricked it
+  - I think I sweeped it far off somewhere
+  - I think it was on my left?
+  - Somewhere?
+  _playerReplyOptions: []
   _npcReplies: []

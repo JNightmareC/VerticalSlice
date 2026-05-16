@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: goGetItThen
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - Well then, don't talk to me
+  - Go get it!
+  - And don't forget, make sure to really FOCUS on what the object is
+  - It's out there, and a pretty small thing too
+  _playerReplyOptions: []
   _npcReplies: []

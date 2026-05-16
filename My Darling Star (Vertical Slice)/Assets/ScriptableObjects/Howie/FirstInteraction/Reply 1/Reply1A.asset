@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: Reply1A
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - I mean, duh
+  - You're the moon, you were out for a full rotation!
+  - You were rolling around so much
+  - I think some creature feature stole your gift though...
+  - You better find it
+  _playerReplyOptions: []
   _npcReplies: []

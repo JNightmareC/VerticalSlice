@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: WithMultiple
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - Those are DEFFO not what I told you to find
+  - Try again, I know you can do it!
+  - Theres gotta be something else out there
+  - ...
+  - If you find some of that, SPARKLY stuff thats been fallin from the sky
+  - I miiight just let you pass
+  - I'll even throw in a treat!
+  _playerReplyOptions: []
   _npcReplies: []

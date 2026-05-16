@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: GotGummyWorm
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - Oh!
+  - You got a gummy worm!
+  - That is, an absolutly giant one!
+  - But I'm more than certain that's NOT what you got her
+  - Try looking for something shinier
+  - I know you can do it!
+  _playerReplyOptions: []
   _npcReplies: []

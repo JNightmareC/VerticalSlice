@@ -10,11 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: WithRing
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - Oh wowwww!
+  - Thats
+  - 'That''s beautiful! '
+  - Oh gee!
+  - I know she's going to love it
+  - You're a bit late now, but I don't think she'd mind
+  - Just walk to that gate over there and press on it a bit
+  - I unlocked it
+  - Go on then, go get 'er!
+  _playerReplyOptions: []
   _npcReplies: []

@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Sunny
+  m_Name: CorrectItemAndOthers
   m_EditorClassIdentifier: 
-  _NPCName: Sunny
+  _NPCName: Howie
   _lines:
-  - 'I love you '
-  _playerReplyOptions:
-  - I love you too
+  - Oh Awesome!!
+  - You still struggle with finding stuff, huh?
+  - Sorry, I wasn't trying to be rude Moony!
+  - Hey, you got it!
+  - Even if it took you a little longer than intended.
+  - Just walk down the path and open up those gates!
+  - I unlocked it for you :)
+  _playerReplyOptions: []
   _npcReplies: []

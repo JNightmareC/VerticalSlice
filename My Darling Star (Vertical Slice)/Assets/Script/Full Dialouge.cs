@@ -30,7 +30,6 @@ public class FullDialouge : MonoBehaviour
     private bool _gotCorrectAndMultiple = false;
     public bool _talking = false;
 
-    public string _NPCName; 
     public bool _talkingOver = false;
      
 
@@ -126,6 +125,8 @@ public class FullDialouge : MonoBehaviour
             
             else
             {
+                _talking = false;
+
                 _talkingOver = true;
 
             }
