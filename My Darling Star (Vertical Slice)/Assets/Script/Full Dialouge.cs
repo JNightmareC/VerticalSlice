@@ -16,8 +16,8 @@ public class FullDialouge : MonoBehaviour
     [SerializeField] private DialougeUI _dialogue;
     //[SerializeField] private DialogueNode _dialogueStartNode;
     [SerializeField] private List<DialogueNode> _dialougeDifferntNodeStates;
-    private DialogueNode _currentNode;
-    private int _currentLine = 0;
+    public DialogueNode _currentNode;
+    public int _currentLine = 0;
     public bool _runningDialogue;
     private bool _waitingForPlayerResponse;
     private bool _gotCube = false;
@@ -30,7 +30,7 @@ public class FullDialouge : MonoBehaviour
     public bool _talking = false;
 
     public bool _talkingOver = false;
-     
+    public int _timesSpokenTo = 0;
 
 
 
@@ -38,11 +38,13 @@ public class FullDialouge : MonoBehaviour
     {
         _currentNode = _dialougeDifferntNodeStates[0];
         _talkingOver = false;
+        _timesSpokenTo = 0;
         
     }
 
     private void Update ()
     {
+        Debug.Log(_currentNode);
         if(PlayerSingleton.Instance == null) return;
 
         if(Vector3.Distance(transform.position, PlayerSingleton.Instance.transform.position) < _interactionDistance)
@@ -99,14 +101,20 @@ public class FullDialouge : MonoBehaviour
             else if (_gotCorrect == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[4];
+                _timesSpokenTo += 1;
+
             }
             else if (_gotCorrectAndMultiple == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[5];
+                _timesSpokenTo += 1;
+
             }
             else if (_gotSecret == true && gameObject.name == "Howie")
             {
                 _currentNode = _dialougeDifferntNodeStates[6];
+                _timesSpokenTo += 1;
+
 
             }  
             else if(_gotMultiple && gameObject.name == "Howie")

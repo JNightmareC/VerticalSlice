@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,10 +113,10 @@ TextureImporter:
       name: Illustration46 8_0
       rect:
         serializedVersion: 2
-        x: 826
-        y: 1268
-        width: 1946
-        height: 2218
+        x: 712
+        y: 1150
+        width: 2144
+        height: 2483
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
