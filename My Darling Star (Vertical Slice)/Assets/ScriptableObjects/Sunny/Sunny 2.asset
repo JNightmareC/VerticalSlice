@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
   m_Name: Sunny 2
   m_EditorClassIdentifier: 
-  _NPCName: 
+  _NPCName: Sunny
   _lines:
   - 'hehe, I know '
   _playerReplyOptions: []

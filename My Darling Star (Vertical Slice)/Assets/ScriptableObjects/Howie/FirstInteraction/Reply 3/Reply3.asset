@@ -19,10 +19,12 @@ MonoBehaviour:
   - '*HONK MI MI SHOO*'
   - I tried to stop them but uh...
   - I was busy doing stuff-
+  - Bakin' and all a' that
+  - can really be a workout actually-
   _playerReplyOptions:
   - Who was it?
   - Did you see it?
-  - Your paw looks red
+  - Your hand looks red
   _npcReplies:
   - {fileID: 11400000, guid: 156f58e3383524379a473d073dda61b5, type: 2}
   - {fileID: 11400000, guid: 727ebca8d843b47a8b908d27cec67fb9, type: 2}

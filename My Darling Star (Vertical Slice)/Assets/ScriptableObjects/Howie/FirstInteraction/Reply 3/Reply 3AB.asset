@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b43c54b1a7cf24429a69e4139e5f923f, type: 3}
-  m_Name: Reply3A
+  m_Name: Reply 3AB
   m_EditorClassIdentifier: 
   _NPCName: Howie
   _lines:
-  - It was an ugly, ugly creature
-  - I dont even know how to describe it
-  - The evilest creature I ever saw
-  _playerReplyOptions:
-  - ... That didn't help Howie-
-  _npcReplies:
-  - {fileID: 11400000, guid: a4064ce38939b4a0bacd51d395382e6c, type: 2}
+  - 'Sorry sorry! '
+  - It's really all I can remember
+  - Honest!
+  _playerReplyOptions: []
+  _npcReplies: []

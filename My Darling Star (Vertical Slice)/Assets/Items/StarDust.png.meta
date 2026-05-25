@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b9151366314b4405b6422df94f3292d
+guid: 49e31ce1b0bbe4b86b8d04ed0fd03066
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Noticed Howie_0
+      name: StarDust_0
       rect:
         serializedVersion: 2
-        x: 171
-        y: 52
-        width: 2103
-        height: 4149
+        x: 360
+        y: 1316
+        width: 5
+        height: 8
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 663092042239d45fdb781b086a22e131
-      internalID: -2003985269
+      spriteID: 994e21373eb0e46e48b4d2f1e9695262
+      internalID: 968393852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noticed Howie_1
+      name: StarDust_1
       rect:
         serializedVersion: 2
-        x: 2452
-        y: 58
-        width: 1977
-        height: 4143
+        x: 37
+        y: 33
+        width: 2022
+        height: 1339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,29 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27c806e54783a4f0788a8dc1e696d3ef
-      internalID: -301235133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Noticed Howie_2
-      rect:
-        serializedVersion: 2
-        x: 4524
-        y: 58
-        width: 1974
-        height: 4143
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 556b47d21b60e424d9c88b1f1b9f442e
-      internalID: 2050126184
+      spriteID: 78d1a27d6f61942848fa0d094b3a6d4e
+      internalID: 1690461
       vertices: []
       indices: 
       edges: []
@@ -175,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4ad54d847320e40c6916848cac2865dc
+    spriteID: e1ea82b85b537483d94bc82f003c8099
     internalID: 0
     vertices: []
     indices: 
@@ -183,9 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Noticed Howie_0: -2003985269
-      Noticed Howie_1: -301235133
-      Noticed Howie_2: 2050126184
+      StarDust_0: 968393852
+      StarDust_1: 1690461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

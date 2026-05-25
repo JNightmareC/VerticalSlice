@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NPCName: Howie
   _lines:
-  - I mean, duh
-  - You're the moon, you were out for a full rotation!
+  - I mean, yeeeah!
+  - You're the MOON, you were out for a full rotation!
   - You were rolling around so much
   - I think some creature feature stole your gift though...
-  - You better find it
+  - You better find it!
   _playerReplyOptions: []
   _npcReplies: []
