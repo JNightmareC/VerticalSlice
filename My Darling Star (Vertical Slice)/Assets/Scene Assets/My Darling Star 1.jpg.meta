@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df6bb3be99a0b4780a3507d1aafa1c39
+guid: 8378ce8b122594e7c9096e2e51d0b7df
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: My Darling Star_0
+      name: My Darling Star 1_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 8
-        width: 276
-        height: 187
+        x: 0
+        y: 0
+        width: 277
+        height: 181
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fde5d1670321429b874fbea8bdd24ad
-      internalID: -1775000284
+      spriteID: 99e8983d2432e4778ab599e54e0bbefa
+      internalID: 260374451
       vertices: []
       indices: 
       edges: []
@@ -133,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: f30c2202fd20c47a1a60b5fda52a672d
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      My Darling Star_0: -1775000284
+      My Darling Star 1_0: 260374451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
