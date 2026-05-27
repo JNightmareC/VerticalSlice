@@ -15,21 +15,24 @@ public class Sunny : MonoBehaviour
     [SerializeField] private float _interactionDistance = 2.0f;
     [SerializeField] private DialougeUI _dialogue;
     //[SerializeField] private DialogueNode _dialogueStartNode;
-    [SerializeField] private List<DialogueNode> _dialougeDifferntNodeStates;
-    private DialogueNode _currentNode;
+    [SerializeField] public List<DialogueNode> _dialougeDifferntNodeStates;
+    [SerializeField]private FullDialouge _fullDia;
+    public DialogueNode _currentNode;
     private int _currentLine = 0;
     public bool _runningDialogue;
     private bool _waitingForPlayerResponse;
     public bool _talking = false;
 
     public bool _talkingOver = false;
+
+
+    
      
 
 
 
     private void Start ()
     {
-        _currentNode = _dialougeDifferntNodeStates[0];
         _talkingOver = false;
         
     }
@@ -79,6 +82,21 @@ public class Sunny : MonoBehaviour
             
             EndDialogue();
 
+            if (_fullDia._gotCorrect == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[0];
+
+            }
+            else if (_fullDia._gotSecret == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[1];
+
+            }
+            else if (_fullDia._gotCorrect && _fullDia._gotSecret == true)
+            {
+                _currentNode = _dialougeDifferntNodeStates[2];
+
+            }
         }
     }
 
@@ -110,5 +128,6 @@ public class Sunny : MonoBehaviour
         
     }
     
+
     
 }
