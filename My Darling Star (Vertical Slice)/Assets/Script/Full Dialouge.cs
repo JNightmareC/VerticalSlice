@@ -44,7 +44,7 @@ public class FullDialouge : MonoBehaviour
 
     private void Update ()
     {
-        Debug.Log(_currentNode);
+        //Debug.Log(_currentNode);
         if(PlayerSingleton.Instance == null) return;
 
         if(Vector3.Distance(transform.position, PlayerSingleton.Instance.transform.position) < _interactionDistance)
