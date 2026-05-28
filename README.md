@@ -44,7 +44,23 @@ I was able to bridge both of those by being able to call meathods in a dialouge 
 The unity system I used was the scriptabe objects. They can be found attached to the only NPC present so far, in a dedicated folder, and referenced in 3 Dialouge realted scripts (and graphs, these being Dialoge Node, DialougeUI, Full Dialouge, Yippie Creature state graph, and Items state graoh).
 
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+
+### Question 1
+
+<img width="768" height="634" alt="Screenshot 2026-05-27 at 2 44 19 AM" src="https://github.com/user-attachments/assets/feb18357-901c-41ff-bc6e-a7e8c1943b31" />
+
+This can be found in the shader folder of my asset files, named "NewOutline"
+
+There are many parts to my shader, so to start, we look at the UV adds to the sample texture, all of these areas just shift the textures around in 4 directions, up, down, left, and right. These are the bases of the outline. From all the textures, the alpha is taken from all of them (the alpha is the opaqueness of the image) to get the in general image isolated from the bacground. Then steps are applied to each individual alpha texture, which changes all the values of the textures to 1 to make sure that the collective added together outline doesnt have any values that are greater than one (this would cause a problem when color is introduced, as it would blow out the colors to be randomly bright in some areas). At one branch, all are added, lerped so that it becomes easy for me to functionally turn it on and off from my script grpahs (if the value is 0, it will only displace the origional sprites alpha, and if it is 1, then it will display alpha outline). For the other branch, all of the outlines are added to each other and we clamp the value to really re-enforce the that the backing should all be the same solid color (when color is applied). You get the Alpha of the regular sprite without the UV shifts, and subtract it from the clamped value to get a visable outline that ONLY oncludes the area around the base sprite. Color is then multiplied to it, but before it can be added to the main image, some more color treatment needs to be done. Even though the background looks as if there is basically transperent, with no other darker values, there can be, so you want to make sure you isolate them from the main sprite to make sure it doesnt effect your outline and make it way lighter or darker than it's supposed to be when you basically overlay them over each other. To fix this, I needed to use a one minus node attached to the apha, which is literally just inverting the alpha select, so we are getting the background instead of the sprite. We then need to subtract the background from the sprite to only get the pure sprite, then clamp the new sprite to make sure there are no outliers that could possibly cause another blowout. Once this is done, then you can finally add the colored outline together with the sprite, and output it to the base color fragment. 
+
+### Question 2
+
+The things I was able to improve on this devlog based on my playtesting feedback, was mainlly the clipping that was happening near the gate leading to the final state of the game. Before, there was a large wall of hill as a natural barrier to stop players from passing on too soon, but it became apperent that it was very, ugly to look at. So I extended the gate so you could look over to the other side, get stopped from moving on, and not have the odd world clipping issue at that point. I lowered some of the planes players walk on also, especially near where the other items to collect are so it will be easier for them to get to the items and check their descriptions.
+
+### Question 3
+
+I have added a lot of new content. First, I added more dialouge, new sprites, and new animations for Sunny. It added to the  gameplay loop as I had already added on NPC before, and I needed the second NPC referenced in my pitch to complete the game. Along with that, I haded to add new conditions with the already added trinkets (other than the new sprites to fully indicate what they were, whcih helps with player identification), now players get a different responce not only from Howie depending on what item you have in your inventory, but now Sunny changes her dialouge too. Another thing added was a game end state that switches after the last conversation with Sunny, it will switch to a new scene, and give a finality to the game. The final thing added was a shader that highlights the interactable item you hover over on, it was in my pitch, and in general just adds to the 4 items that were already planned to be in the gameplay loop. 
+
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog
@@ -56,6 +72,8 @@ Final Devlog goes here.
 
 [Friendlyscribbles by kmlgames](https://kmlgames.itch.io/friendly-scribbles) - font
 
-[Sprout Lands Asset pack by Cup Nooble](https://cupnooble.itch.io/sprout-lands-ui-pack) - UI for speech
+[Sprout Lands Asset pack by Cup Nooble](https://cupnooble.itch.io/sprout-lands-ui-pack) - Stand in UI for speech
 
-[Low Poly Environment - Nature Free - LOWPOLY MEDIEVAL FANTASY SERIES by Polytope Studio](https://assetstore.unity.com/packages/3d/environments/low-poly-environment-nature-free-lowpoly-medieval-fantasy-series-187052) - nature enviroment assets
+[Low Poly Environment - Nature Free - LOWPOLY MEDIEVAL FANTASY SERIES by Polytope Studio](https://assetstore.unity.com/packages/3d/environments/low-poly-environment-nature-free-lowpoly-medieval-fantasy-series-187052) - nature enviroment assets and gate assets
+
+[Pandazole - LowPoly Asset Bundle](https://assetstore.unity.com/packages/3d/props/pandazole-lowpoly-asset-bundle-226938) - nature assets and props (like boxes and hay bales)
