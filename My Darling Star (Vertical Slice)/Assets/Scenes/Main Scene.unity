@@ -11920,7 +11920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1449673467
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12169,7 +12169,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 02f969040c7214f42bda74f47137b6ca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.25
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02f969040c7214f42bda74f47137b6ca,
         type: 3}
@@ -12179,7 +12179,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 02f969040c7214f42bda74f47137b6ca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.39
+      value: 53.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02f969040c7214f42bda74f47137b6ca,
         type: 3}
@@ -12448,9 +12448,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"BoxText","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"camera","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Boxpos","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1449673466}
+    - {fileID: 330585543}
+    - {fileID: 1564290375}
 --- !u!54 &1564290385
 Rigidbody:
   m_ObjectHideFlags: 0
