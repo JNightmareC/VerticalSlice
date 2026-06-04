@@ -76,4 +76,8 @@ Final Devlog goes here.
 
 [Low Poly Environment - Nature Free - LOWPOLY MEDIEVAL FANTASY SERIES by Polytope Studio](https://assetstore.unity.com/packages/3d/environments/low-poly-environment-nature-free-lowpoly-medieval-fantasy-series-187052) - nature enviroment assets and gate assets
 
-[Pandazole - LowPoly Asset Bundle](https://assetstore.unity.com/packages/3d/props/pandazole-lowpoly-asset-bundle-226938) - nature assets and props (like boxes and hay bales)
+[Pandazole - LowPoly Asset Bundle by Pandazole](https://assetstore.unity.com/packages/3d/props/pandazole-lowpoly-asset-bundle-226938) - nature assets and props (like boxes and hay bales)
+
+[In a Dream by johnny_ripper](https://freemusicarchive.org/music/johnny_ripper/soundtrack_for_a_film_that_doesnt_exist/johnny_ripper_-_soundtrack_for_a_film_that_doesnt_exist_-_25_in_a_dream_1835/) [licence](https://creativecommons.org/licenses/by-nc-sa/3.0/) - Background music (no changes were made)
+
+[RPG Essentials Sound Effects - FREE! by leohpaz](https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708) - Footstep and collecing sound effects
