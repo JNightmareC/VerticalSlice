@@ -18,7 +18,7 @@ public class Sunny : MonoBehaviour
     [SerializeField] public List<DialogueNode> _dialougeDifferntNodeStates;
     [SerializeField]private FullDialouge _fullDia;
     public DialogueNode _currentNode;
-    private int _currentLine = 0;
+    public int _currentLine = 0;
     public bool _runningDialogue;
     private bool _waitingForPlayerResponse;
     public bool _talking = false;

@@ -3967,6 +3967,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ede1286b9c2147388caea8ce26778f8, type: 2}
   _fullDia: {fileID: 497714300}
   _currentNode: {fileID: 0}
+  _currentLine: 0
   _runningDialogue: 0
   _talking: 0
   _talkingOver: 0
@@ -12254,6 +12255,8 @@ GameObject:
   - component: {fileID: 1366373337}
   - component: {fileID: 1366373339}
   - component: {fileID: 1366373340}
+  - component: {fileID: 1366373342}
+  - component: {fileID: 1366373341}
   m_Layer: 5
   m_Name: BackPannel
   m_TagString: Untagged
@@ -12319,6 +12322,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1366373341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366373336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 5063fe1e15d8c4d0b9591d2a7f425400, type: 2}
+--- !u!114 &1366373342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366373336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &1372848550
 PrefabInstance:
   m_ObjectHideFlags: 0
