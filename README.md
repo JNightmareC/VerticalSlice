@@ -61,10 +61,9 @@ The things I was able to improve on this devlog based on my playtesting feedback
 
 I have added a lot of new content. First, I added more dialouge, new sprites, and new animations for Sunny. It added to the  gameplay loop as I had already added on NPC before, and I needed the second NPC referenced in my pitch to complete the game. Along with that, I haded to add new conditions with the already added trinkets (other than the new sprites to fully indicate what they were, whcih helps with player identification), now players get a different responce not only from Howie depending on what item you have in your inventory, but now Sunny changes her dialouge too. Another thing added was a game end state that switches after the last conversation with Sunny, it will switch to a new scene, and give a finality to the game. The final thing added was a shader that highlights the interactable item you hover over on, it was in my pitch, and in general just adds to the 4 items that were already planned to be in the gameplay loop. 
 
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
+
 ## Final Devlog
-Final Devlog goes here.
+1. My main gameplay loop is as follows, talk to an NPC, get a quest, explore, find a trinket and try to match the description, bring it back to the NPC. As described in that loop, I was able to acomplish that exact loop as I had described in my full game pitch, in my verticle slice. I had 1 NPC that wouold have you go out and try to find a trinket, with clues based on what dialouge option you chose. After a player exahusted the options, they would explore the space, and inspect the only 4 interactable items in the world to see if the clues matched up. Then with each item brought back would result in a new responce from the NPC. If the NPC was given the right option, the player could then proceed to the end game state. This overall illustrates to players that if this were a full game, there would be way more areas to explore, deffinately more NPC's with different dialouge nodes to check what the player is holding, and more fetching and searchaing quests to futher complicate the player reaching the end state. 
 ## Open-source assets
 [Handpainted grass and ground textures by Chromisu](https://assetstore.unity.com/publishers/35697) - Floor textures
 
