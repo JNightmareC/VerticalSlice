@@ -1,0 +1,15 @@
+{
+    "name": "My Darling Star (Vertical Slice)",
+    "short_name": "My Darling Star (Vertical Slice)",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000",
+    "description": "Made With Love",
+    "icons": [{
+      "src": "TemplateData/icons/unity-logo-dark.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }
