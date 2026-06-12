@@ -72,6 +72,8 @@ And for the NPC's, It virtually the same, with a small difference considering th
 
 <img width="1415" height="689" alt="Screenshot 2026-06-08 at 5 05 29 PM" src="https://github.com/user-attachments/assets/3e46f21a-40c2-4529-a83a-f0c8ab37a929" />
 
+(The graphs are the same amongst all items, and the same for all NPC's)
+
 
 3. I usually break things down into both bubbles, and lists, like the one activity we did where we broke down unity system implementation into a task list. First, I break things down into bubbles, starting with all the biggest systems and mechanics that tie to them. Then if those big systems require too many components or intriquacies, then you split it up even more to account for everything. This should fully describe the ammount of work I would need to do in the first place. I like using the bubbles for that reaseon in particular, it gives a visual aid to how much needs to be made. To further see the scope of the project, I like to get one mechanic, and break it down into steps, to again, see how many things I need to interwork, how many parts of the job overlap together, how many steps I need to go through, repeat, and just do in general for only ONE system. I was able ot figure that out during my verticle slice project. i hated making bubbles, but it helped a lot for visualizing during the process, and really helped me develop and connect my vision for what I really needed. But what helped th emost, was making a astep by step proecss. I was able to follow a plan better when I made a list with tasks and steps I needed to follow. I want to repeat that scoping process that I used by mixing visuals, and stepe, because it really shaped a general web of tasks for me to do, while allowig myself to demo exactly all I needed to do.
 
